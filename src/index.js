@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
-import connectDB from './db/index.js'; // ✅ correct relative path
-import app from './app.js'; // ✅ import express app
+import connectDB from './db/index.js'; 
+import app from './app.js'; 
 
-dotenv.config({ path: './.env' }); // Load env variables
+dotenv.config({ path: './.env' }); 
 
 connectDB()
   .then(() => {
